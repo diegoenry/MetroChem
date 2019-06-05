@@ -1,0 +1,7 @@
+source leaprc.water
+
+mol = loadpdb water.pdb
+
+saveamberparm mol water.prmtop water.rst7 
+quit
+

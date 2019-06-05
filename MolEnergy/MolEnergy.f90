@@ -9,7 +9,8 @@ call ReadPDB
 call ReadParm
 call GenBondList
 call GenAngleList
-call EnergyAngles
+!call EnergyAngles
+call ForceAngles
 
 stop
 
