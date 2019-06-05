@@ -28,6 +28,7 @@ type topology
     character(len=6),allocatable :: resname(:)
     
     ! Read from PDB file
+    character(len=30),allocatable :: pdb(:)
     real,allocatable             :: x(:)
     real,allocatable             :: y(:)
     real,allocatable             :: z(:)
@@ -75,5 +76,14 @@ type bonds
 end type bonds
 
 type(bonds) :: bond_list
+
+
+
+! FORCE
+real, allocatable :: fx(:)
+real, allocatable :: fy(:)
+real, allocatable :: fz(:)
+
+
 
 end module mol

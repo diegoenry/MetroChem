@@ -10,7 +10,9 @@ real :: r2
 real :: dij
 real :: rij
 real :: bond_potential
-real :: EBOND=0.0d0
+real :: EBOND
+
+EBOND=0.0d0
 
 do i=1,molecule%num_bonds
     
@@ -22,16 +24,16 @@ do i=1,molecule%num_bonds
     yj=molecule%y(bond_list%bond_j(i))
     zj=molecule%z(bond_list%bond_j(i))
     
-    r2 = (xi-xj)**2 + (yi-yj)**2 + (zi-zj)**2
-    dij = 1.d0/sqrt(r2)
-    rij = r2*dij
+    !r2 = (xi-xj)**2 + (yi-yj)**2 + (zi-zj)**2
+    !dij = 1.d0/sqrt(r2)
+    !rij = r2*dij
     
+    rij= sqrt((xi-xj)**2 + (yi-yj)**2 + (zi-zj)**2 )
     bond_potential=-bond_list%bond_k(i) * (rij * rij)
     EBOND=EBOND+bond_potential
-    write(*,*) bond_list%bond_i(i),bond_list%bond_j(i),rij,bond_potential
 enddo 
 
-write(*,*) 'EBOND = ',EBOND
+!write(*,*) 'EBOND = ',EBOND
 ! Don't forget to Setup set neighbourlist
 
 end subroutine EnergyBonds

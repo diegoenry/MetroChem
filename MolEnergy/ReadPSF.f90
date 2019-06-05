@@ -2,6 +2,7 @@ subroutine ReadPSF
 use mol
 
 character(len=32) :: line
+!open(1,file="test.psf")
 open(1,file="butane.psf")
 
 ! Read Atoms -----------------------------------------------
@@ -21,6 +22,15 @@ allocate(molecule%charge (molecule%num_atoms))
 allocate(molecule%segid  (molecule%num_atoms))
 allocate(molecule%resid  (molecule%num_atoms))
 allocate(molecule%resname(molecule%num_atoms))
+
+
+
+! Forces
+allocate(fx(molecule%num_atoms))
+allocate(fy(molecule%num_atoms))
+allocate(fz(molecule%num_atoms))
+
+
 
 do i=1,molecule%num_atoms
 read(1,*)   molecule%id(i),      &
