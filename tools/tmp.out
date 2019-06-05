@@ -1,0 +1,38 @@
+ TITLE>  * MOL ENERGY BEFORE THE OPTIMIZATION
+ TITLE>  *
+PRIN ENR:  Eval#     ENERgy      Delta-E         GRMS
+PRIN INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+PRIN EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+PRIN>        1     10.62594      0.00000     11.46504
+PRIN INTERN>        0.23016      5.59375      0.00000      3.20871      0.00000
+PRIN EXTERN>        1.20601      0.38731      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ TITLE>  * MOL ENERGY AFTER OPTIMIZATION
+ TITLE>  *
+PRIN ENR:  Eval#     ENERgy      Delta-E         GRMS
+PRIN INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+PRIN EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+PRIN>        2      1.38573      0.00000      0.00001
+PRIN INTERN>        0.02803      0.15027      0.00000      0.41185      0.00000
+PRIN EXTERN>        0.44376      0.35182      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+* MOL ENERGY AFTER OPTIMIZATION
+*  DATE:     6/ 4/19     19:10: 2      CREATED BY USER: dgomes
+*
+   14
+    1    1 MOL  C1     2.65163   1.19682  -2.08096 MOL  1      0.00000
+    2    1 MOL  C2     1.29617   0.81999  -1.44895 MOL  1      0.00000
+    3    1 MOL  C3     1.46683   0.07701  -0.10491 MOL  1      0.00000
+    4    1 MOL  C4     0.11137  -0.29982   0.52710 MOL  1      0.00000
+    5    1 MOL  H1     3.22333   1.85598  -1.41528 MOL  1      0.00000
+    6    1 MOL  H2     3.25307   0.30042  -2.27898 MOL  1      0.00000
+    7    1 MOL  H3     2.49907   1.72206  -3.03220 MOL  1      0.00000
+    8    1 MOL  H4     0.70513   1.73197  -1.29316 MOL  1      0.00000
+    9    1 MOL  H5     0.73464   0.18874  -2.15001 MOL  1      0.00000
+   10    1 MOL  H6     2.05787  -0.83497  -0.26069 MOL  1      0.00000
+   11    1 MOL  H7     2.02836   0.70826   0.59616 MOL  1      0.00000
+   12    1 MOL  H8     0.26393  -0.82506   1.47834 MOL  1      0.00000
+   13    1 MOL  H9    -0.49007   0.59658   0.72512 MOL  1      0.00000
+   14    1 MOL  H10   -0.46033  -0.95898  -0.13858 MOL  1      0.00000
