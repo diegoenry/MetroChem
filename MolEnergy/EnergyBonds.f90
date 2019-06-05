@@ -10,7 +10,6 @@ real :: r2
 real :: dij
 real :: rij
 real :: bond_potential
-real :: EBOND
 
 EBOND=0.0d0
 

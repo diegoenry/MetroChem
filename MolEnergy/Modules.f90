@@ -2,6 +2,9 @@ module mol
 implicit none
 
 
+integer :: step   ! Simulation step
+logical :: verbose
+
 type topology
 
     !Read from .PSF
@@ -71,12 +74,23 @@ type bonds
     character(len=5),allocatable :: bond_types(:)
     integer,allocatable :: bond_i(:)
     integer,allocatable :: bond_j(:)
-    real,allocatable :: bond_k(:)
-    real,allocatable :: bond_0(:)
+    real,allocatable    :: bond_k(:)
+    real,allocatable    :: bond_0(:)
 end type bonds
 
 type(bonds) :: bond_list
 
+
+type angles
+    character(len=5),allocatable :: angle_types(:)
+    integer,allocatable :: angle_1(:)
+    integer,allocatable :: angle_2(:)
+    integer,allocatable :: angle_3(:)
+    real,allocatable    :: angle_k(:)
+    real,allocatable    :: angle_0(:)
+end type angles
+
+type(angles) :: angle_list
 
 
 ! FORCE
@@ -84,6 +98,9 @@ real, allocatable :: fx(:)
 real, allocatable :: fy(:)
 real, allocatable :: fz(:)
 
+! Potential
+real :: EBOND
+real :: EANGLE
 
 
 end module mol
