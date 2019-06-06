@@ -9,22 +9,29 @@ call ReadPDB
 call ReadParm
 call GenBondList
 call GenAngleList
-!call EnergyAngles
-call ForceAngles
 
-stop
-
-!call EnergyBonds
 
 open(2,file='out.pdb')
-call WritePDB(1)
 
-do step=2,50
-call ForceBonds
-call WriteEnergy
-call WritePDB
+do step=1,10
+
+! Zera as forcas 
+fx = 0.0 ! Global, mover para fora dessa funcao
+fy = 0.0 ! Global, mover para fora dessa funcao
+fz = 0.0 ! Global, mover para fora dessa funcao
+
+! Zera os potenciais
+EPOT   = 0.0d0  ! Global, deve vir fora dessa funcao
+EBOND  = 0.0d0
+EANGLE = 0.0d0
+
+!call ForceBonds
+call ForceAngles
+
 call Steepest
 
+call WriteEnergy
+call WritePDB
 enddo
 
 

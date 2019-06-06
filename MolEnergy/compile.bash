@@ -8,7 +8,7 @@ gfortran -O3  \
    EnergyBonds.f90 \
    EnergyAngles.f90 \
    ForceBonds.f90 \
-   ForceAngles.f90 \
+   ForceAngles_v2.f90 \
    Steepest.f90 \
    WritePDB.f90 \
    WriteEnergy.f90 \

@@ -1,5 +1,6 @@
 subroutine WriteEnergy
-use mol, only : EBOND
-write(*,*) 'EBOND = ',EBOND
+use mol, only : EBOND,EANGLE
+
+	write(*,*) 'EBOND = ',EBOND,'EANGLE = ',EANGLE
 
 end subroutine WriteEnergy

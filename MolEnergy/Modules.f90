@@ -31,7 +31,7 @@ type topology
     character(len=6),allocatable :: resname(:)
     
     ! Read from PDB file
-    character(len=30),allocatable :: pdb(:)
+    character(len=30),allocatable:: pdb(:)
     real,allocatable             :: x(:)
     real,allocatable             :: y(:)
     real,allocatable             :: z(:)
@@ -71,23 +71,23 @@ type(parameters) :: forcefield
 
 
 type bonds
-    character(len=5),allocatable :: bond_types(:)
-    integer,allocatable :: bond_i(:)
-    integer,allocatable :: bond_j(:)
-    real,allocatable    :: bond_k(:)
-    real,allocatable    :: bond_0(:)
+    character(len=5),allocatable 	:: bond_types(:)
+    integer,allocatable 			:: bond_i(:)
+    integer,allocatable 			:: bond_j(:)
+    real,allocatable    			:: bond_k(:)
+    real,allocatable    			:: bond_0(:)
 end type bonds
 
 type(bonds) :: bond_list
 
 
 type angles
-    character(len=5),allocatable :: angle_types(:)
-    integer,allocatable :: angle_1(:)
-    integer,allocatable :: angle_2(:)
-    integer,allocatable :: angle_3(:)
-    real,allocatable    :: angle_k(:)
-    real,allocatable    :: angle_0(:)
+    character(len=5),allocatable 	:: angle_types(:)
+    integer,allocatable 			:: angle_1(:)
+    integer,allocatable 			:: angle_2(:)
+    integer,allocatable 			:: angle_3(:)
+    real,allocatable    			:: angle_k(:)
+    real,allocatable   				:: angle_0(:)
 end type angles
 
 type(angles) :: angle_list
