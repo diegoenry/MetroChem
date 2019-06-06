@@ -1,0 +1,101 @@
+
+program test
+real :: a(3), b(3) ,c(3)
+real :: ba(3),bc(3)
+real :: uv_dot
+real :: v1_norm
+real :: v2_norm
+real :: angle_cos
+real :: angle
+real :: angle_deg
+
+real, parameter :: pi= 4.0d0*atan2(1.0d0,1.0d0)
+real :: dcp(3)
+real :: pa(3)
+real :: fa(3)
+
+a=(/0.0d0,0.0d0,0.0d0/)
+b=(/1.0d0,0.0d0,0.0d0/)
+c=(/1.0d0,1.0d0,0.0d0/)
+
+ba=b-a
+bc=b-c
+
+uv_dot  = dot_product ( ba, bc )
+
+v1_norm = sqrt ( dot_product ( ba, ba ) )
+v2_norm = sqrt ( dot_product ( bc, bc ) )
+
+angle_cos = uv_dot / v1_norm / v2_norm
+angle = acos ( angle_cos )    
+
+angle_deg = angle * 180/pi
+
+call double_cross_product(ba, bc, dcp)
+
+call aforce(angle_deg,energy,force)
+
+! norm(tmp)
+norma = sqrt(dcp(1)*dcp(1) + dcp(2)*dcp(2) + dcp(3)*dcp(3))
+pa(1) = dcp(1)/norma
+pa(2) = dcp(2)/norma
+pa(3) = dcp(3)/norma    
+
+!r = normalize(tmp)
+
+! check
+!rnorm = sqrt(dot_product(r,r))
+!rnorm = 1
+
+fa(1) = (force /v1_norm)*pa(1)
+fa(2) = (force /v1_norm)*pa(2)
+fa(3) = (force /v1_norm)*pa(3)
+
+write(*,*) angle_deg,energy,force,fa
+
+
+
+
+
+end program test
+
+subroutine aforce(angle,energy,force)
+    real, intent(in)  :: angle
+    real, intent(out) :: energy
+    real, intent(out) :: force
+    real :: k
+    
+    k=41.600
+    theta_0=106.490
+    ! Computa o potential
+    energy=- k * (angle - theta_0 )**2
+    
+    ! Computa a forca -2k(theta-theta_0) 
+    force = -2 * k * (angle - theta_0)   
+    
+end subroutine aforce
+
+
+subroutine double_cross_product(v1,v2,cp)
+    implicit none
+    real, intent(in)  :: v1(3) ! input
+    real, intent(in)  :: v2(3) ! input
+    real, intent(out) :: cp(3) ! output
+    real :: ut(3) ! output
+
+    ! cross product  ( v1 x v2 ) 
+    !ut = cross_product(v1,v2)
+    ut(1) = v1(2)*v2(3) - v1(3)*v2(2)
+    ut(2) = v1(3)*v2(1) - v1(1)*v2(3)
+    ut(3) = v1(1)*v2(2) - v1(2)*v2(1)
+    
+    ! second cross product
+    ! cross product: v1 x (v1 x v2) = v1 x ut
+    !tmp = cross_product(v1,ut)
+    cp(1) = v1(2)*ut(3) - v1(3)*ut(2)
+    cp(2) = v1(3)*ut(1) - v1(1)*ut(3)
+    cp(3)=  v1(1)*ut(2) - v1(2)*ut(1)
+    
+    return
+end subroutine double_cross_product
+
