@@ -20,14 +20,14 @@ call bforce(coord,force)
 
 call aforce(coord,force)
 
-call Steepest(coord,force)
+call Minimize(coord,force)
 
 ! ---------------------------------
 ! Write out result
 !write(*,'(3f15.3)') angle_deg,energy,angle_force
 
 
-write(2,'("MODEL",i5)') istep+1
+write(2,'("MODEL",i5)') istep
 do i=1,3
     write(2,'(a30,3f8.3)') pdb(i),coord(i,1),coord(i,2),coord(i,3)
 enddo
@@ -62,7 +62,7 @@ subroutine readpdb(coord,pdb)
 end subroutine readpdb
 
 
-subroutine Steepest(coord,force)
+subroutine Minimize(coord,force)
     real,intent(in)     :: force(3,3)
     real,intent(inout)  :: coord(3,3)
     do i=1,3
@@ -70,7 +70,7 @@ subroutine Steepest(coord,force)
         coord(i,2) = coord(i,2)-force(i,2)*0.00001
         coord(i,3) = coord(i,3)-force(i,3)*0.00001
     enddo
-end subroutine Steepest
+end subroutine Minimize
 
 
 
@@ -132,7 +132,7 @@ implicit none
     ! Computa a forca -2k(theta-theta_0) 
     angle_force =  2 * k * (angle_deg - theta_0) 
 
-    write(*,*) angle_rad,angle_deg, angle_force
+    !write(*,*) angle_rad,angle_deg, angle_force
 
 
 ! ------------------------------------------------------------------
@@ -268,7 +268,7 @@ subroutine bforce(coord,force)
 
         ! Computa a forca
         bond_force = 2 * k * (dij )
-        write(*,*) 1,i,rij,dij,bond_force
+        !write(*,*) 1,i,rij,dij,bond_force
 
         ! Decompoe para os eixos
         fxi = bond_force * dx

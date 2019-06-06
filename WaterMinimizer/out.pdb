@@ -1,0 +1,500 @@
+MODEL    2
+HETATM    1  O   HOH     1       0.032   0.033   0.000
+HETATM    2  H   HOH     0       1.022   0.971   0.000
+HETATM    3  H   HOH     0      -0.051   1.000   0.000
+ENDMDL
+MODEL    3
+HETATM    1  O   HOH     1       0.062   0.066   0.000
+HETATM    2  H   HOH     0       1.043   0.944   0.000
+HETATM    3  H   HOH     0      -0.098   0.996   0.000
+ENDMDL
+MODEL    4
+HETATM    1  O   HOH     1       0.089   0.101   0.000
+HETATM    2  H   HOH     0       1.060   0.919   0.000
+HETATM    3  H   HOH     0      -0.140   0.989   0.000
+ENDMDL
+MODEL    5
+HETATM    1  O   HOH     1       0.112   0.134   0.000
+HETATM    2  H   HOH     0       1.076   0.896   0.000
+HETATM    3  H   HOH     0      -0.177   0.980   0.000
+ENDMDL
+MODEL    6
+HETATM    1  O   HOH     1       0.133   0.166   0.000
+HETATM    2  H   HOH     0       1.089   0.876   0.000
+HETATM    3  H   HOH     0      -0.209   0.969   0.000
+ENDMDL
+MODEL    7
+HETATM    1  O   HOH     1       0.150   0.195   0.000
+HETATM    2  H   HOH     0       1.100   0.858   0.000
+HETATM    3  H   HOH     0      -0.236   0.959   0.000
+ENDMDL
+MODEL    8
+HETATM    1  O   HOH     1       0.165   0.221   0.000
+HETATM    2  H   HOH     0       1.109   0.842   0.000
+HETATM    3  H   HOH     0      -0.257   0.948   0.000
+ENDMDL
+MODEL    9
+HETATM    1  O   HOH     1       0.177   0.243   0.000
+HETATM    2  H   HOH     0       1.116   0.829   0.000
+HETATM    3  H   HOH     0      -0.275   0.939   0.000
+ENDMDL
+MODEL   10
+HETATM    1  O   HOH     1       0.186   0.261   0.000
+HETATM    2  H   HOH     0       1.121   0.819   0.000
+HETATM    3  H   HOH     0      -0.288   0.932   0.000
+ENDMDL
+MODEL   11
+HETATM    1  O   HOH     1       0.194   0.275   0.000
+HETATM    2  H   HOH     0       1.125   0.810   0.000
+HETATM    3  H   HOH     0      -0.299   0.925   0.000
+ENDMDL
+MODEL   12
+HETATM    1  O   HOH     1       0.201   0.286   0.000
+HETATM    2  H   HOH     0       1.128   0.804   0.000
+HETATM    3  H   HOH     0      -0.307   0.920   0.000
+ENDMDL
+MODEL   13
+HETATM    1  O   HOH     1       0.206   0.295   0.000
+HETATM    2  H   HOH     0       1.130   0.799   0.000
+HETATM    3  H   HOH     0      -0.313   0.917   0.000
+ENDMDL
+MODEL   14
+HETATM    1  O   HOH     1       0.211   0.301   0.000
+HETATM    2  H   HOH     0       1.131   0.795   0.000
+HETATM    3  H   HOH     0      -0.318   0.914   0.000
+ENDMDL
+MODEL   15
+HETATM    1  O   HOH     1       0.214   0.305   0.000
+HETATM    2  H   HOH     0       1.132   0.792   0.000
+HETATM    3  H   HOH     0      -0.322   0.912   0.000
+ENDMDL
+MODEL   16
+HETATM    1  O   HOH     1       0.218   0.308   0.000
+HETATM    2  H   HOH     0       1.133   0.789   0.000
+HETATM    3  H   HOH     0      -0.324   0.911   0.000
+ENDMDL
+MODEL   17
+HETATM    1  O   HOH     1       0.221   0.311   0.000
+HETATM    2  H   HOH     0       1.134   0.788   0.000
+HETATM    3  H   HOH     0      -0.327   0.910   0.000
+ENDMDL
+MODEL   18
+HETATM    1  O   HOH     1       0.224   0.312   0.000
+HETATM    2  H   HOH     0       1.134   0.786   0.000
+HETATM    3  H   HOH     0      -0.329   0.910   0.000
+ENDMDL
+MODEL   19
+HETATM    1  O   HOH     1       0.226   0.313   0.000
+HETATM    2  H   HOH     0       1.134   0.785   0.000
+HETATM    3  H   HOH     0      -0.330   0.909   0.000
+ENDMDL
+MODEL   20
+HETATM    1  O   HOH     1       0.228   0.313   0.000
+HETATM    2  H   HOH     0       1.134   0.784   0.000
+HETATM    3  H   HOH     0      -0.332   0.909   0.000
+ENDMDL
+MODEL   21
+HETATM    1  O   HOH     1       0.231   0.313   0.000
+HETATM    2  H   HOH     0       1.134   0.784   0.000
+HETATM    3  H   HOH     0      -0.333   0.910   0.000
+ENDMDL
+MODEL   22
+HETATM    1  O   HOH     1       0.233   0.313   0.000
+HETATM    2  H   HOH     0       1.134   0.783   0.000
+HETATM    3  H   HOH     0      -0.334   0.910   0.000
+ENDMDL
+MODEL   23
+HETATM    1  O   HOH     1       0.235   0.313   0.000
+HETATM    2  H   HOH     0       1.134   0.782   0.000
+HETATM    3  H   HOH     0      -0.335   0.910   0.000
+ENDMDL
+MODEL   24
+HETATM    1  O   HOH     1       0.237   0.312   0.000
+HETATM    2  H   HOH     0       1.134   0.782   0.000
+HETATM    3  H   HOH     0      -0.336   0.911   0.000
+ENDMDL
+MODEL   25
+HETATM    1  O   HOH     1       0.239   0.312   0.000
+HETATM    2  H   HOH     0       1.134   0.782   0.000
+HETATM    3  H   HOH     0      -0.337   0.911   0.000
+ENDMDL
+MODEL   26
+HETATM    1  O   HOH     1       0.240   0.311   0.000
+HETATM    2  H   HOH     0       1.133   0.781   0.000
+HETATM    3  H   HOH     0      -0.338   0.911   0.000
+ENDMDL
+MODEL   27
+HETATM    1  O   HOH     1       0.242   0.311   0.000
+HETATM    2  H   HOH     0       1.133   0.781   0.000
+HETATM    3  H   HOH     0      -0.339   0.912   0.000
+ENDMDL
+MODEL   28
+HETATM    1  O   HOH     1       0.244   0.310   0.000
+HETATM    2  H   HOH     0       1.133   0.780   0.000
+HETATM    3  H   HOH     0      -0.339   0.912   0.000
+ENDMDL
+MODEL   29
+HETATM    1  O   HOH     1       0.246   0.310   0.000
+HETATM    2  H   HOH     0       1.133   0.780   0.000
+HETATM    3  H   HOH     0      -0.340   0.913   0.000
+ENDMDL
+MODEL   30
+HETATM    1  O   HOH     1       0.247   0.309   0.000
+HETATM    2  H   HOH     0       1.133   0.780   0.000
+HETATM    3  H   HOH     0      -0.341   0.913   0.000
+ENDMDL
+MODEL   31
+HETATM    1  O   HOH     1       0.249   0.308   0.000
+HETATM    2  H   HOH     0       1.133   0.780   0.000
+HETATM    3  H   HOH     0      -0.342   0.913   0.000
+ENDMDL
+MODEL   32
+HETATM    1  O   HOH     1       0.250   0.308   0.000
+HETATM    2  H   HOH     0       1.133   0.779   0.000
+HETATM    3  H   HOH     0      -0.342   0.914   0.000
+ENDMDL
+MODEL   33
+HETATM    1  O   HOH     1       0.252   0.307   0.000
+HETATM    2  H   HOH     0       1.133   0.779   0.000
+HETATM    3  H   HOH     0      -0.343   0.914   0.000
+ENDMDL
+MODEL   34
+HETATM    1  O   HOH     1       0.254   0.307   0.000
+HETATM    2  H   HOH     0       1.133   0.779   0.000
+HETATM    3  H   HOH     0      -0.344   0.915   0.000
+ENDMDL
+MODEL   35
+HETATM    1  O   HOH     1       0.255   0.306   0.000
+HETATM    2  H   HOH     0       1.133   0.778   0.000
+HETATM    3  H   HOH     0      -0.344   0.915   0.000
+ENDMDL
+MODEL   36
+HETATM    1  O   HOH     1       0.256   0.305   0.000
+HETATM    2  H   HOH     0       1.132   0.778   0.000
+HETATM    3  H   HOH     0      -0.345   0.915   0.000
+ENDMDL
+MODEL   37
+HETATM    1  O   HOH     1       0.258   0.305   0.000
+HETATM    2  H   HOH     0       1.132   0.778   0.000
+HETATM    3  H   HOH     0      -0.346   0.916   0.000
+ENDMDL
+MODEL   38
+HETATM    1  O   HOH     1       0.259   0.304   0.000
+HETATM    2  H   HOH     0       1.132   0.778   0.000
+HETATM    3  H   HOH     0      -0.347   0.916   0.000
+ENDMDL
+MODEL   39
+HETATM    1  O   HOH     1       0.261   0.304   0.000
+HETATM    2  H   HOH     0       1.132   0.777   0.000
+HETATM    3  H   HOH     0      -0.347   0.916   0.000
+ENDMDL
+MODEL   40
+HETATM    1  O   HOH     1       0.262   0.303   0.000
+HETATM    2  H   HOH     0       1.132   0.777   0.000
+HETATM    3  H   HOH     0      -0.348   0.917   0.000
+ENDMDL
+MODEL   41
+HETATM    1  O   HOH     1       0.263   0.303   0.000
+HETATM    2  H   HOH     0       1.132   0.777   0.000
+HETATM    3  H   HOH     0      -0.349   0.917   0.000
+ENDMDL
+MODEL   42
+HETATM    1  O   HOH     1       0.264   0.302   0.000
+HETATM    2  H   HOH     0       1.132   0.777   0.000
+HETATM    3  H   HOH     0      -0.349   0.917   0.000
+ENDMDL
+MODEL   43
+HETATM    1  O   HOH     1       0.266   0.302   0.000
+HETATM    2  H   HOH     0       1.132   0.777   0.000
+HETATM    3  H   HOH     0      -0.350   0.918   0.000
+ENDMDL
+MODEL   44
+HETATM    1  O   HOH     1       0.267   0.301   0.000
+HETATM    2  H   HOH     0       1.132   0.776   0.000
+HETATM    3  H   HOH     0      -0.350   0.918   0.000
+ENDMDL
+MODEL   45
+HETATM    1  O   HOH     1       0.268   0.301   0.000
+HETATM    2  H   HOH     0       1.132   0.776   0.000
+HETATM    3  H   HOH     0      -0.351   0.918   0.000
+ENDMDL
+MODEL   46
+HETATM    1  O   HOH     1       0.269   0.300   0.000
+HETATM    2  H   HOH     0       1.132   0.776   0.000
+HETATM    3  H   HOH     0      -0.352   0.919   0.000
+ENDMDL
+MODEL   47
+HETATM    1  O   HOH     1       0.270   0.300   0.000
+HETATM    2  H   HOH     0       1.132   0.776   0.000
+HETATM    3  H   HOH     0      -0.352   0.919   0.000
+ENDMDL
+MODEL   48
+HETATM    1  O   HOH     1       0.271   0.299   0.000
+HETATM    2  H   HOH     0       1.132   0.775   0.000
+HETATM    3  H   HOH     0      -0.353   0.919   0.000
+ENDMDL
+MODEL   49
+HETATM    1  O   HOH     1       0.272   0.299   0.000
+HETATM    2  H   HOH     0       1.132   0.775   0.000
+HETATM    3  H   HOH     0      -0.353   0.919   0.000
+ENDMDL
+MODEL   50
+HETATM    1  O   HOH     1       0.273   0.298   0.000
+HETATM    2  H   HOH     0       1.132   0.775   0.000
+HETATM    3  H   HOH     0      -0.354   0.920   0.000
+ENDMDL
+MODEL   51
+HETATM    1  O   HOH     1       0.274   0.298   0.000
+HETATM    2  H   HOH     0       1.132   0.775   0.000
+HETATM    3  H   HOH     0      -0.355   0.920   0.000
+ENDMDL
+MODEL   52
+HETATM    1  O   HOH     1       0.275   0.298   0.000
+HETATM    2  H   HOH     0       1.132   0.775   0.000
+HETATM    3  H   HOH     0      -0.355   0.920   0.000
+ENDMDL
+MODEL   53
+HETATM    1  O   HOH     1       0.276   0.297   0.000
+HETATM    2  H   HOH     0       1.132   0.774   0.000
+HETATM    3  H   HOH     0      -0.356   0.920   0.000
+ENDMDL
+MODEL   54
+HETATM    1  O   HOH     1       0.277   0.297   0.000
+HETATM    2  H   HOH     0       1.133   0.774   0.000
+HETATM    3  H   HOH     0      -0.356   0.921   0.000
+ENDMDL
+MODEL   55
+HETATM    1  O   HOH     1       0.278   0.296   0.000
+HETATM    2  H   HOH     0       1.133   0.774   0.000
+HETATM    3  H   HOH     0      -0.357   0.921   0.000
+ENDMDL
+MODEL   56
+HETATM    1  O   HOH     1       0.279   0.296   0.000
+HETATM    2  H   HOH     0       1.133   0.774   0.000
+HETATM    3  H   HOH     0      -0.357   0.921   0.000
+ENDMDL
+MODEL   57
+HETATM    1  O   HOH     1       0.280   0.295   0.000
+HETATM    2  H   HOH     0       1.133   0.774   0.000
+HETATM    3  H   HOH     0      -0.358   0.921   0.000
+ENDMDL
+MODEL   58
+HETATM    1  O   HOH     1       0.281   0.295   0.000
+HETATM    2  H   HOH     0       1.133   0.773   0.000
+HETATM    3  H   HOH     0      -0.358   0.922   0.000
+ENDMDL
+MODEL   59
+HETATM    1  O   HOH     1       0.282   0.295   0.000
+HETATM    2  H   HOH     0       1.133   0.773   0.000
+HETATM    3  H   HOH     0      -0.359   0.922   0.000
+ENDMDL
+MODEL   60
+HETATM    1  O   HOH     1       0.283   0.294   0.000
+HETATM    2  H   HOH     0       1.133   0.773   0.000
+HETATM    3  H   HOH     0      -0.359   0.922   0.000
+ENDMDL
+MODEL   61
+HETATM    1  O   HOH     1       0.283   0.294   0.000
+HETATM    2  H   HOH     0       1.133   0.773   0.000
+HETATM    3  H   HOH     0      -0.360   0.922   0.000
+ENDMDL
+MODEL   62
+HETATM    1  O   HOH     1       0.284   0.294   0.000
+HETATM    2  H   HOH     0       1.133   0.773   0.000
+HETATM    3  H   HOH     0      -0.360   0.922   0.000
+ENDMDL
+MODEL   63
+HETATM    1  O   HOH     1       0.285   0.293   0.000
+HETATM    2  H   HOH     0       1.133   0.773   0.000
+HETATM    3  H   HOH     0      -0.361   0.923   0.000
+ENDMDL
+MODEL   64
+HETATM    1  O   HOH     1       0.286   0.293   0.000
+HETATM    2  H   HOH     0       1.133   0.772   0.000
+HETATM    3  H   HOH     0      -0.361   0.923   0.000
+ENDMDL
+MODEL   65
+HETATM    1  O   HOH     1       0.286   0.293   0.000
+HETATM    2  H   HOH     0       1.133   0.772   0.000
+HETATM    3  H   HOH     0      -0.362   0.923   0.000
+ENDMDL
+MODEL   66
+HETATM    1  O   HOH     1       0.287   0.292   0.000
+HETATM    2  H   HOH     0       1.133   0.772   0.000
+HETATM    3  H   HOH     0      -0.362   0.923   0.000
+ENDMDL
+MODEL   67
+HETATM    1  O   HOH     1       0.288   0.292   0.000
+HETATM    2  H   HOH     0       1.133   0.772   0.000
+HETATM    3  H   HOH     0      -0.363   0.923   0.000
+ENDMDL
+MODEL   68
+HETATM    1  O   HOH     1       0.288   0.292   0.000
+HETATM    2  H   HOH     0       1.134   0.772   0.000
+HETATM    3  H   HOH     0      -0.363   0.924   0.000
+ENDMDL
+MODEL   69
+HETATM    1  O   HOH     1       0.289   0.291   0.000
+HETATM    2  H   HOH     0       1.134   0.772   0.000
+HETATM    3  H   HOH     0      -0.364   0.924   0.000
+ENDMDL
+MODEL   70
+HETATM    1  O   HOH     1       0.290   0.291   0.000
+HETATM    2  H   HOH     0       1.134   0.771   0.000
+HETATM    3  H   HOH     0      -0.364   0.924   0.000
+ENDMDL
+MODEL   71
+HETATM    1  O   HOH     1       0.290   0.291   0.000
+HETATM    2  H   HOH     0       1.134   0.771   0.000
+HETATM    3  H   HOH     0      -0.365   0.924   0.000
+ENDMDL
+MODEL   72
+HETATM    1  O   HOH     1       0.291   0.290   0.000
+HETATM    2  H   HOH     0       1.134   0.771   0.000
+HETATM    3  H   HOH     0      -0.365   0.924   0.000
+ENDMDL
+MODEL   73
+HETATM    1  O   HOH     1       0.292   0.290   0.000
+HETATM    2  H   HOH     0       1.134   0.771   0.000
+HETATM    3  H   HOH     0      -0.365   0.924   0.000
+ENDMDL
+MODEL   74
+HETATM    1  O   HOH     1       0.292   0.290   0.000
+HETATM    2  H   HOH     0       1.134   0.771   0.000
+HETATM    3  H   HOH     0      -0.366   0.924   0.000
+ENDMDL
+MODEL   75
+HETATM    1  O   HOH     1       0.293   0.289   0.000
+HETATM    2  H   HOH     0       1.134   0.771   0.000
+HETATM    3  H   HOH     0      -0.366   0.925   0.000
+ENDMDL
+MODEL   76
+HETATM    1  O   HOH     1       0.293   0.289   0.000
+HETATM    2  H   HOH     0       1.134   0.771   0.000
+HETATM    3  H   HOH     0      -0.367   0.925   0.000
+ENDMDL
+MODEL   77
+HETATM    1  O   HOH     1       0.294   0.289   0.000
+HETATM    2  H   HOH     0       1.134   0.770   0.000
+HETATM    3  H   HOH     0      -0.367   0.925   0.000
+ENDMDL
+MODEL   78
+HETATM    1  O   HOH     1       0.294   0.289   0.000
+HETATM    2  H   HOH     0       1.135   0.770   0.000
+HETATM    3  H   HOH     0      -0.367   0.925   0.000
+ENDMDL
+MODEL   79
+HETATM    1  O   HOH     1       0.295   0.288   0.000
+HETATM    2  H   HOH     0       1.135   0.770   0.000
+HETATM    3  H   HOH     0      -0.368   0.925   0.000
+ENDMDL
+MODEL   80
+HETATM    1  O   HOH     1       0.295   0.288   0.000
+HETATM    2  H   HOH     0       1.135   0.770   0.000
+HETATM    3  H   HOH     0      -0.368   0.925   0.000
+ENDMDL
+MODEL   81
+HETATM    1  O   HOH     1       0.296   0.288   0.000
+HETATM    2  H   HOH     0       1.135   0.770   0.000
+HETATM    3  H   HOH     0      -0.369   0.925   0.000
+ENDMDL
+MODEL   82
+HETATM    1  O   HOH     1       0.296   0.287   0.000
+HETATM    2  H   HOH     0       1.135   0.770   0.000
+HETATM    3  H   HOH     0      -0.369   0.926   0.000
+ENDMDL
+MODEL   83
+HETATM    1  O   HOH     1       0.297   0.287   0.000
+HETATM    2  H   HOH     0       1.135   0.770   0.000
+HETATM    3  H   HOH     0      -0.369   0.926   0.000
+ENDMDL
+MODEL   84
+HETATM    1  O   HOH     1       0.297   0.287   0.000
+HETATM    2  H   HOH     0       1.135   0.770   0.000
+HETATM    3  H   HOH     0      -0.370   0.926   0.000
+ENDMDL
+MODEL   85
+HETATM    1  O   HOH     1       0.298   0.287   0.000
+HETATM    2  H   HOH     0       1.135   0.769   0.000
+HETATM    3  H   HOH     0      -0.370   0.926   0.000
+ENDMDL
+MODEL   86
+HETATM    1  O   HOH     1       0.298   0.286   0.000
+HETATM    2  H   HOH     0       1.136   0.769   0.000
+HETATM    3  H   HOH     0      -0.370   0.926   0.000
+ENDMDL
+MODEL   87
+HETATM    1  O   HOH     1       0.299   0.286   0.000
+HETATM    2  H   HOH     0       1.136   0.769   0.000
+HETATM    3  H   HOH     0      -0.371   0.926   0.000
+ENDMDL
+MODEL   88
+HETATM    1  O   HOH     1       0.299   0.286   0.000
+HETATM    2  H   HOH     0       1.136   0.769   0.000
+HETATM    3  H   HOH     0      -0.371   0.926   0.000
+ENDMDL
+MODEL   89
+HETATM    1  O   HOH     1       0.300   0.286   0.000
+HETATM    2  H   HOH     0       1.136   0.769   0.000
+HETATM    3  H   HOH     0      -0.372   0.926   0.000
+ENDMDL
+MODEL   90
+HETATM    1  O   HOH     1       0.300   0.285   0.000
+HETATM    2  H   HOH     0       1.136   0.769   0.000
+HETATM    3  H   HOH     0      -0.372   0.926   0.000
+ENDMDL
+MODEL   91
+HETATM    1  O   HOH     1       0.300   0.285   0.000
+HETATM    2  H   HOH     0       1.136   0.769   0.000
+HETATM    3  H   HOH     0      -0.372   0.927   0.000
+ENDMDL
+MODEL   92
+HETATM    1  O   HOH     1       0.301   0.285   0.000
+HETATM    2  H   HOH     0       1.136   0.769   0.000
+HETATM    3  H   HOH     0      -0.373   0.927   0.000
+ENDMDL
+MODEL   93
+HETATM    1  O   HOH     1       0.301   0.285   0.000
+HETATM    2  H   HOH     0       1.136   0.769   0.000
+HETATM    3  H   HOH     0      -0.373   0.927   0.000
+ENDMDL
+MODEL   94
+HETATM    1  O   HOH     1       0.301   0.285   0.000
+HETATM    2  H   HOH     0       1.136   0.768   0.000
+HETATM    3  H   HOH     0      -0.373   0.927   0.000
+ENDMDL
+MODEL   95
+HETATM    1  O   HOH     1       0.302   0.284   0.000
+HETATM    2  H   HOH     0       1.137   0.768   0.000
+HETATM    3  H   HOH     0      -0.373   0.927   0.000
+ENDMDL
+MODEL   96
+HETATM    1  O   HOH     1       0.302   0.284   0.000
+HETATM    2  H   HOH     0       1.137   0.768   0.000
+HETATM    3  H   HOH     0      -0.374   0.927   0.000
+ENDMDL
+MODEL   97
+HETATM    1  O   HOH     1       0.302   0.284   0.000
+HETATM    2  H   HOH     0       1.137   0.768   0.000
+HETATM    3  H   HOH     0      -0.374   0.927   0.000
+ENDMDL
+MODEL   98
+HETATM    1  O   HOH     1       0.303   0.284   0.000
+HETATM    2  H   HOH     0       1.137   0.768   0.000
+HETATM    3  H   HOH     0      -0.374   0.927   0.000
+ENDMDL
+MODEL   99
+HETATM    1  O   HOH     1       0.303   0.284   0.000
+HETATM    2  H   HOH     0       1.137   0.768   0.000
+HETATM    3  H   HOH     0      -0.375   0.927   0.000
+ENDMDL
+MODEL  100
+HETATM    1  O   HOH     1       0.303   0.283   0.000
+HETATM    2  H   HOH     0       1.137   0.768   0.000
+HETATM    3  H   HOH     0      -0.375   0.927   0.000
+ENDMDL
+MODEL  101
+HETATM    1  O   HOH     1       0.304   0.283   0.000
+HETATM    2  H   HOH     0       1.137   0.768   0.000
+HETATM    3  H   HOH     0      -0.375   0.927   0.000
+ENDMDL
