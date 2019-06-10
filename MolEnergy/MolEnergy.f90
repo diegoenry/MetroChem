@@ -1,8 +1,8 @@
 program molenergy
 use mol
 
-!verbose=.true.
-verbose=.false.
+verbose=.true.
+!verbose=.false.
 
 call ReadPSF
 call ReadPDB
@@ -10,8 +10,8 @@ call ReadParm
 call GenBondList
 call GenAngleList
 
-
 open(2,file='out.pdb')
+call WritePDB
 
 do step=1,10
 
@@ -25,12 +25,14 @@ EPOT   = 0.0d0  ! Global, deve vir fora dessa funcao
 EBOND  = 0.0d0
 EANGLE = 0.0d0
 
-!call ForceBonds
+call ForceBonds
+
 call ForceAngles
 
-call Steepest
+call Minimize
 
 call WriteEnergy
+
 call WritePDB
 enddo
 

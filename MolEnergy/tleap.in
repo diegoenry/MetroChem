@@ -1,7 +1,10 @@
 source leaprc.gaff2
 
-mol = loadmol2 butane.mol2 
+mol = loadmol2 ethane.mol2 
 
-saveamberparm mol butane.prmtop butane.rst7 
+saveamberparm mol ethane.prmtop ethane.rst7 
+savePDB mol ethane.pdb
 quit
+
+
 

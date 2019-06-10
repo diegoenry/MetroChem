@@ -16,12 +16,19 @@ do i=1,molecule%num_bonds*2,2
    
    ai=trim(molecule%type( ( molecule%bonds(i) )))
    aj=trim(molecule%type( ( molecule%bonds(i+1) )))
-      
-    do j=1,forcefield%num_bond_types
+
+!   write(*,*)  molecule%bonds(i),ai,molecule%bonds(i+1),aj   
+    
+   ! BONDS can be in any order. eg. OW-HW  or HW-OW
+   do j=1,forcefield%num_bond_types
 
         if  (ai == forcefield%bond_types(j)(1:2) &
         .and. &
-             aj == forcefield%bond_types(j)(4:5)) &
+             aj == forcefield%bond_types(j)(4:5) &
+        .or. &
+             aj == forcefield%bond_types(j)(1:2) &
+        .and. &
+             ai == forcefield%bond_types(j)(4:5)) &
         then
                 ! Assign bond parameters
                 k=k+1
@@ -30,17 +37,21 @@ do i=1,molecule%num_bonds*2,2
                 bond_list%bond_k(k)=forcefield%bond_k(j)
                 bond_list%bond_0(k)=forcefield%bond_0(j)
 
+!               write(*,*)  "BOND ",molecule%bonds(i),ai,molecule%bonds(i+1),aj
+
         end if
     enddo
+
 enddo
 ! write it here
+
 
 
 if (verbose) then
     write(*,'(i5,1x,"!NBONDS")') molecule%num_bonds
     do k=1,molecule%num_bonds
 
-        write(*,'(2i3,2f8.3)')  &
+        write(*,'(2i5,2f8.3)')  &
                     bond_list%bond_i(k),&
                     bond_list%bond_j(k),&
                     bond_list%bond_k(k),&
@@ -48,5 +59,5 @@ if (verbose) then
     enddo
 end if
 
-! 
+ 
 end subroutine GenBondList

@@ -8,13 +8,14 @@ character(len=32) :: line
 ! the NUMBER of different bonds
 ! the NUMBER of different angles
 ! the NUMBER of different dihedrals
+
 forcefield%num_atom_types=2
 forcefield%num_bond_types=2
-forcefield%num_angle_types=3
-forcefield%num_dihedral_types=5
+forcefield%num_angle_types=2
+forcefield%num_dihedral_types=1
 
 
-open(1,file='butane.frcmod')
+open(1,file='ethane.frcmod')
 
 allocate(forcefield%atom_types    (forcefield%num_atom_types))
 allocate(forcefield%atom_epsilon  (forcefield%num_atom_types))
@@ -36,7 +37,7 @@ allocate(forcefield%dihedral_y    (forcefield%num_dihedral_types))
 
 ! Read BOND parameters -------------------------------------
 do while (index(line,'BOND')==0)
-    read(1,'(A32)') line
+    read(1,'(A32)',end=100) line
 end do
 
 do i=1,forcefield%num_bond_types
@@ -48,7 +49,7 @@ enddo
 
 ! Read ANGLE parameters -------------------------------------
 do while (index(line,'ANGLE')==0)
-    read(1,'(A32)') line
+   read(1,'(A32)',end=100) line
 end do
 
 do i=1,forcefield%num_angle_types
@@ -58,9 +59,12 @@ read(1,*)   forcefield%angle_types(i), &
 enddo
 
 
-! Read ANGLE parameters -------------------------------------
+! water
+close(1)
+
+! Read Dihedral ANGLE parameters -------------------------------------
 do while (index(line,'DIHE')==0)
-    read(1,'(A32)') line
+   read(1,'(A32)',end=100) line
 end do
 
 do i=1,forcefield%num_dihedral_types
@@ -70,5 +74,6 @@ read(1,*)   forcefield%dihedral_types(i), &
             forcefield%dihedral_y(i)
 enddo
 
+100 continue
 close(1)
 end subroutine ReadParm

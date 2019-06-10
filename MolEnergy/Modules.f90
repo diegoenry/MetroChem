@@ -14,8 +14,8 @@ type topology
     integer	                     :: num_dihedrals
 
     integer,allocatable          :: bonds(:)
-    real,allocatable             :: bond_k(:)
-    real,allocatable             :: bond_0(:)
+    real*8,allocatable             :: bond_k(:)
+    real*8,allocatable             :: bond_0(:)
     
     
     integer,allocatable          :: angles(:)
@@ -24,17 +24,17 @@ type topology
     integer,allocatable          :: id(:)
     character(len=4),allocatable :: name(:)
     character(len=6),allocatable :: type(:)
-    real,allocatable             :: mass(:)
-    real,allocatable             :: charge(:)    
+    real*8,allocatable             :: mass(:)
+    real*8,allocatable             :: charge(:)    
     character(len=6),allocatable :: segid(:)
     integer,allocatable          :: resid(:)
     character(len=6),allocatable :: resname(:)
     
     ! Read from PDB file
     character(len=30),allocatable:: pdb(:)
-    real,allocatable             :: x(:)
-    real,allocatable             :: y(:)
-    real,allocatable             :: z(:)
+    real*8,allocatable             :: x(:)
+    real*8,allocatable             :: y(:)
+    real*8,allocatable             :: z(:)
 
 end type topology
 
@@ -49,21 +49,21 @@ type parameters
     integer :: num_dihedral_types=4
 
     character(len=2),allocatable :: atom_types(:)
-    real,allocatable :: atom_epsilon(:)
-    real,allocatable :: atom_sigma(:)
+    real*8,allocatable :: atom_epsilon(:)
+    real*8,allocatable :: atom_sigma(:)
     
     character(len=5),allocatable :: bond_types(:)
-    real,allocatable :: bond_k(:)
-    real,allocatable :: bond_0(:)
+    real*8,allocatable :: bond_k(:)
+    real*8,allocatable :: bond_0(:)
 
     character(len=8),allocatable :: angle_types(:)
-    real,allocatable :: angle_k(:)
-    real,allocatable :: angle_0(:)
+    real*8,allocatable :: angle_k(:)
+    real*8,allocatable :: angle_0(:)
     
     character(len=11),allocatable :: dihedral_types(:)
-    real,allocatable :: dihedral_k(:)
-    real,allocatable :: dihedral_0(:)
-    real,allocatable :: dihedral_y(:)
+    real*8,allocatable :: dihedral_k(:)
+    real*8,allocatable :: dihedral_0(:)
+    real*8,allocatable :: dihedral_y(:)
 
 end type parameters
 
@@ -74,8 +74,8 @@ type bonds
     character(len=5),allocatable 	:: bond_types(:)
     integer,allocatable 			:: bond_i(:)
     integer,allocatable 			:: bond_j(:)
-    real,allocatable    			:: bond_k(:)
-    real,allocatable    			:: bond_0(:)
+    real*8,allocatable    			:: bond_k(:)
+    real*8,allocatable    			:: bond_0(:)
 end type bonds
 
 type(bonds) :: bond_list
@@ -86,21 +86,21 @@ type angles
     integer,allocatable 			:: angle_1(:)
     integer,allocatable 			:: angle_2(:)
     integer,allocatable 			:: angle_3(:)
-    real,allocatable    			:: angle_k(:)
-    real,allocatable   				:: angle_0(:)
+    real*8,allocatable    			:: angle_k(:)
+    real*8,allocatable   				:: angle_0(:)
 end type angles
 
 type(angles) :: angle_list
 
 
 ! FORCE
-real, allocatable :: fx(:)
-real, allocatable :: fy(:)
-real, allocatable :: fz(:)
+real*8, allocatable :: fx(:)
+real*8, allocatable :: fy(:)
+real*8, allocatable :: fz(:)
 
 ! Potential
-real :: EBOND
-real :: EANGLE
+real*8 :: EBOND
+real*8 :: EANGLE
 
 
 end module mol

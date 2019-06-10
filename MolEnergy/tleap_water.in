@@ -1,7 +1,9 @@
-source leaprc.water
+source leaprc.water.tip3p
 
-mol = loadpdb water.pdb
+mol = loadpdb hoh.pdb
 
 saveamberparm mol water.prmtop water.rst7 
+savepdb mol water.pdb
+savemol2 mol water.mol2 1
 quit
 

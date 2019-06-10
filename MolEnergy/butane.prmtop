@@ -1,4 +1,4 @@
-%VERSION  VERSION_STAMP = V0001.000  DATE = 06/04/19  21:40:07                  
+%VERSION  VERSION_STAMP = V0001.000  DATE = 06/09/19  00:17:47                  
 %FLAG TITLE                                                                     
 %FORMAT(20a4)                                                                   
 BUTANE                                                                          
@@ -44,13 +44,13 @@ BUT
        1
 %FLAG BOND_FORCE_CONSTANT                                                       
 %FORMAT(5E16.8)                                                                 
-  2.32520000E+02  3.75920000E+02
+  2.32500000E+02  3.75900000E+02
 %FLAG BOND_EQUIL_VALUE                                                          
 %FORMAT(5E16.8)                                                                 
   1.53800000E+00  1.09700000E+00
 %FLAG ANGLE_FORCE_CONSTANT                                                      
 %FORMAT(5E16.8)                                                                 
-  6.48880000E+01  4.68160000E+01  3.89600000E+01
+  6.49000000E+01  4.68000000E+01  3.90000000E+01
 %FLAG ANGLE_EQUIL_VALUE                                                         
 %FORMAT(5E16.8)                                                                 
   1.94621748E+00  1.91637234E+00  1.87762601E+00

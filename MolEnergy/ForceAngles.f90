@@ -29,32 +29,32 @@ use mol
 integer :: a1   ! Atom index i
 integer :: a2   ! Atom index j
 integer :: a3   ! Atom index k
-real    :: ak   ! Constante de mola (Kb)
-real    :: a0   ! Distancia de equilibrio (b0)
+real*8    :: ak   ! Constante de mola (Kb)
+real*8    :: a0   ! Distancia de equilibrio (b0)
 
 ! Coordenadas temporarias
-real :: x1(3)
-real :: x2(3)
-real :: x3(3)
+real*8 :: x1(3)
+real*8 :: x2(3)
+real*8 :: x3(3)
 
 ! Valores para o calculo do angulo
-real :: v1_norm
-real :: v2_norm
-real :: dot
-real :: angle_rad
-real :: angle_deg
+real*8 :: v1_norm
+real*8 :: v2_norm
+real*8 :: dot
+real*8 :: angle_rad
+real*8 :: angle_deg
 
 ! force
-real :: angle_force
-real :: angle_energy
-real :: v3(3)
-real :: ut(3)
-real :: norm
-real :: p(3)
-real :: ab(3)
-real :: ba(3)
-real :: bc(3)
-real :: cb(3)
+real*8 :: angle_force
+real*8 :: angle_energy
+real*8 :: v3(3)
+real*8 :: ut(3)
+real*8 :: norm
+real*8 :: p(3)
+real*8 :: ab(3)
+real*8 :: ba(3)
+real*8 :: bc(3)
+real*8 :: cb(3)
 
 ! Calculo dos angulos --------------------------------------------------
 do i=1,molecule%num_angles
@@ -62,7 +62,7 @@ do i=1,molecule%num_angles
 	a1 = angle_list%angle_1(i)  ! Atom index i (a) (1)
 	a2 = angle_list%angle_2(i)	! Atom index j (b) (2)
 	a3 = angle_list%angle_3(i)	! Atom index k (c) (3)
-    ak = angle_list%angle_k(i)	! Constante de mola (K)
+   ak = angle_list%angle_k(i)	! Constante de mola (K)
 	a0 = angle_list%angle_0(i)	! Distancia de equilibrio (b0)
 	
 ! [ Passo 1] Copia as coordenadas
@@ -100,7 +100,6 @@ do i=1,molecule%num_angles
     
     angle_deg = angle_rad * 180 / 3.14159265359  !aproximated pi
 
-!  write(*,*) dot, angle_rad,angle_deg  
 
 ! Calcula a forca ------------------------------------------------------
 
@@ -110,7 +109,7 @@ do i=1,molecule%num_angles
     EANGLE = EANGLE + angle_energy
     
     ! Computa a forca -2k(theta-theta_0) 
-    angle_force = - 2 * ak * (angle_deg - a0) 
+    angle_force = 2 * ak * (angle_deg - a0) 
 
 !   write(*,*) a1,a2,a3,angle_deg,(angle_deg - a0), a0,ak,angle_force
     
@@ -151,11 +150,7 @@ do i=1,molecule%num_angles
     fy(a2) = - fy(a1) - fy(a3) + fy(a2)
     fz(a2) = - fz(a1) - fz(a3) + fz(a2)
 
-!   write(*,*) fx(a1),fy(a1), fz(a1)
-!   write(*,*) fx(a2),fy(a2), fz(a2)
-!   write(*,*) fx(a3),fy(a3), fz(a3)
-!   write(*,*) 'EANGLE = ',EANGLE
-
+    write(*,*)  a1,a2,a3,a0,angle_deg
 enddo
 
 
@@ -175,9 +170,9 @@ subroutine cross_product_3d(v1,v2,v3)
 !      + ( z1 * x2 - x1 * z2 ) * j
 !      + ( x1 * y2 - y1 * x2 ) * k
     implicit none
-    real, intent(in)    :: v1(3)
-    real, intent(in)    :: v2(3)
-    real, intent(out)   :: v3(3)
+    real*8, intent(in)    :: v1(3)
+    real*8, intent(in)    :: v2(3)
+    real*8, intent(out)   :: v3(3)
 
     v3(1) = v1(2) * v2(3) - v1(3) * v2(2)
     v3(2) = v1(3) * v2(1) - v1(1) * v2(3)

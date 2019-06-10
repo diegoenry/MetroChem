@@ -4,7 +4,7 @@ character(len=32) :: line
 
 
 !open(1,file='test.pdb')
-open(1,file='butane.pdb')
+open(1,file='ethane.pdb')
 
 ! Go to ATOM record
 do while (index(line,'ATOM')==0)
@@ -20,8 +20,8 @@ allocate(molecule%z   (molecule%num_atoms))
 
 
 do i=1,molecule%num_atoms
-    !read(1,'(30x,3f8.3)') molecule%x(i),molecule%y(i),molecule%z(i)
     read(1,'(a30,3f8.3)') molecule%pdb(i),molecule%x(i),molecule%y(i),molecule%z(i)
+
 enddo
 
 close(1)

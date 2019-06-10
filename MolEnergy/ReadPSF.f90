@@ -2,8 +2,7 @@ subroutine ReadPSF
 use mol
 
 character(len=32) :: line
-!open(1,file="test.psf")
-open(1,file="butane.psf")
+open(1,file="ethane.psf")
 
 ! Read Atoms -----------------------------------------------
 do while (index(line,'NATOM')==0)
@@ -56,13 +55,12 @@ allocate( molecule%bonds (molecule%num_bonds*2))
 allocate( molecule%bond_k(molecule%num_bonds))
 allocate( molecule%bond_0(molecule%num_bonds))
 
-
 read(1,*) molecule%bonds
 
 
 ! Read Angles -----------------------------------------------
 do while (index(line,'NTHETA')==0)
-    read(1,'(A32)') line
+    read(1,'(A32)',end=100) line
 end do
 backspace(1)
 
@@ -75,7 +73,7 @@ read(1,*) molecule%angles
 
 ! Read Dihedrals  -----------------------------------------------
 do while (index(line,'NPHI')==0)
-    read(1,'(A32)') line
+   read(1,'(A32)',end=100) line
 end do
 backspace(1)
 
@@ -84,6 +82,8 @@ allocate (molecule%dihedrals(molecule%num_dihedrals*4))
 read(1,*) molecule%dihedrals
 
 
+
+100 continue
 close(1)
 
 

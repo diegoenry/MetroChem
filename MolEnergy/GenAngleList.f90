@@ -11,7 +11,6 @@ allocate(angle_list%angle_3 (molecule%num_angles))
 allocate(angle_list%angle_k (molecule%num_angles))
 allocate(angle_list%angle_0 (molecule%num_angles))
 
-
 k=0 ! angle counter
 do i=1,molecule%num_angles*3,3
    
@@ -25,7 +24,13 @@ do i=1,molecule%num_angles*3,3
         .and. &
              a2 == forcefield%angle_types(j)(4:5) &
         .and. &
-             a3== forcefield%angle_types(j)(7:8)) &
+             a3 == forcefield%angle_types(j)(7:8) &
+        .or. &
+             a3 == forcefield%angle_types(j)(1:2) &
+        .and. &
+             a2 == forcefield%angle_types(j)(4:5) &
+        .and. &
+             a1 == forcefield%angle_types(j)(7:8) ) &
         then
                 ! Assign angle parameters
                 k=k+1
@@ -34,12 +39,16 @@ do i=1,molecule%num_angles*3,3
                 angle_list%angle_3(k)=molecule%angles(i+2)
                 angle_list%angle_k(k)=forcefield%angle_k(j)
                 angle_list%angle_0(k)=forcefield%angle_0(j)
-                    
+    
         end if
     enddo
 enddo
 ! write it here
 ! 
+
+
+
+write(*,*) "Verify angles"
 
 if (verbose) then
     write(*,'(i5,1x,"!NANGLES")') molecule%num_angles
