@@ -1,0 +1,120 @@
+\hypertarget{water__optimize_8f90}{}\section{water\+\_\+optimize.\+f90 File Reference}
+\label{water__optimize_8f90}\index{water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+program \hyperlink{water__optimize_8f90_a9bc57b8dbe7c3e1b9db72b918a1b6bab}{test}
+\item 
+subroutine \hyperlink{water__optimize_8f90_aa6798098feec21c5053572f5c5043c28}{readpdb} (coord, pdb)
+\item 
+subroutine \hyperlink{water__optimize_8f90_adad91e5491ec76f67219e4754299ceac}{minimize} (coord, force)
+\item 
+subroutine \hyperlink{water__optimize_8f90_a860a9ce2ec48bea8e9cd249437c3269d}{aforce} (x, force)
+\item 
+subroutine \hyperlink{water__optimize_8f90_ac09d0de3f934f24e9272c2f52a8eb350}{double\+\_\+cross\+\_\+product} (v1, v2, cp)
+\item 
+subroutine \hyperlink{water__optimize_8f90_a04c9baacf7d82c67687c579db9ec3446}{cross\+\_\+product\+\_\+3d} (v1, v2, v3)
+\item 
+subroutine \hyperlink{water__optimize_8f90_a1c61ecd9ef781071e23a3290f6371c4d}{bforce} (coord, force)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{water__optimize_8f90_a860a9ce2ec48bea8e9cd249437c3269d}\label{water__optimize_8f90_a860a9ce2ec48bea8e9cd249437c3269d}} 
+\index{water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}!aforce@{aforce}}
+\index{aforce@{aforce}!water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}}
+\subsubsection{\texorpdfstring{aforce()}{aforce()}}
+{\footnotesize\ttfamily subroutine aforce (\begin{DoxyParamCaption}\item[{real, dimension(3,3), intent(in)}]{x,  }\item[{real, dimension(3,3), intent(inout)}]{force }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{water__optimize_8f90_a860a9ce2ec48bea8e9cd249437c3269d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{water__optimize_8f90_a860a9ce2ec48bea8e9cd249437c3269d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{water__optimize_8f90_a1c61ecd9ef781071e23a3290f6371c4d}\label{water__optimize_8f90_a1c61ecd9ef781071e23a3290f6371c4d}} 
+\index{water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}!bforce@{bforce}}
+\index{bforce@{bforce}!water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}}
+\subsubsection{\texorpdfstring{bforce()}{bforce()}}
+{\footnotesize\ttfamily subroutine bforce (\begin{DoxyParamCaption}\item[{real, dimension(3,3), intent(inout)}]{coord,  }\item[{real, dimension(3,3), intent(inout)}]{force }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{water__optimize_8f90_a1c61ecd9ef781071e23a3290f6371c4d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{water__optimize_8f90_a04c9baacf7d82c67687c579db9ec3446}\label{water__optimize_8f90_a04c9baacf7d82c67687c579db9ec3446}} 
+\index{water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}!cross\+\_\+product\+\_\+3d@{cross\+\_\+product\+\_\+3d}}
+\index{cross\+\_\+product\+\_\+3d@{cross\+\_\+product\+\_\+3d}!water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}}
+\subsubsection{\texorpdfstring{cross\+\_\+product\+\_\+3d()}{cross\_product\_3d()}}
+{\footnotesize\ttfamily subroutine cross\+\_\+product\+\_\+3d (\begin{DoxyParamCaption}\item[{real, dimension(3), intent(in)}]{v1,  }\item[{real, dimension(3), intent(in)}]{v2,  }\item[{real, dimension(3), intent(out)}]{v3 }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{water__optimize_8f90_a04c9baacf7d82c67687c579db9ec3446_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{water__optimize_8f90_ac09d0de3f934f24e9272c2f52a8eb350}\label{water__optimize_8f90_ac09d0de3f934f24e9272c2f52a8eb350}} 
+\index{water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}!double\+\_\+cross\+\_\+product@{double\+\_\+cross\+\_\+product}}
+\index{double\+\_\+cross\+\_\+product@{double\+\_\+cross\+\_\+product}!water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}}
+\subsubsection{\texorpdfstring{double\+\_\+cross\+\_\+product()}{double\_cross\_product()}}
+{\footnotesize\ttfamily subroutine double\+\_\+cross\+\_\+product (\begin{DoxyParamCaption}\item[{real, dimension(3), intent(in)}]{v1,  }\item[{real, dimension(3), intent(in)}]{v2,  }\item[{real, dimension(3), intent(out)}]{cp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{water__optimize_8f90_adad91e5491ec76f67219e4754299ceac}\label{water__optimize_8f90_adad91e5491ec76f67219e4754299ceac}} 
+\index{water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}!minimize@{minimize}}
+\index{minimize@{minimize}!water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}}
+\subsubsection{\texorpdfstring{minimize()}{minimize()}}
+{\footnotesize\ttfamily subroutine minimize (\begin{DoxyParamCaption}\item[{real, dimension(3,3), intent(inout)}]{coord,  }\item[{real, dimension(3,3), intent(in)}]{force }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{water__optimize_8f90_adad91e5491ec76f67219e4754299ceac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{water__optimize_8f90_aa6798098feec21c5053572f5c5043c28}\label{water__optimize_8f90_aa6798098feec21c5053572f5c5043c28}} 
+\index{water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}!readpdb@{readpdb}}
+\index{readpdb@{readpdb}!water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}}
+\subsubsection{\texorpdfstring{readpdb()}{readpdb()}}
+{\footnotesize\ttfamily subroutine readpdb (\begin{DoxyParamCaption}\item[{real, dimension(3,3)}]{coord,  }\item[{character(len=30), dimension(3)}]{pdb }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{water__optimize_8f90_aa6798098feec21c5053572f5c5043c28_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{water__optimize_8f90_a9bc57b8dbe7c3e1b9db72b918a1b6bab}\label{water__optimize_8f90_a9bc57b8dbe7c3e1b9db72b918a1b6bab}} 
+\index{water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}!test@{test}}
+\index{test@{test}!water\+\_\+optimize.\+f90@{water\+\_\+optimize.\+f90}}
+\subsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily program test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{water__optimize_8f90_a9bc57b8dbe7c3e1b9db72b918a1b6bab_cgraph}
+\end{center}
+\end{figure}
