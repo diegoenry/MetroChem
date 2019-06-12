@@ -56,22 +56,31 @@ serviço. Se formos realmente bons, podemos gerar receita para o
 departamento.
 
 
-# Recomendações de artigo para o MetroConf.
+### Bibliografia MetroConf.
 
-## Estado da Arte.
+#### Estado da Arte.
 Hawkins, P. C. D. (2017). Conformation Generation: The State of the Art.
 Journal of Chemical Information and Modeling, 57(8), 1747–1756.
 https://doi.org/10.1021/acs.jcim.7b00221
 
-## Aplicação de High-Throughput
+#### Aplicação de High-Throughput
 Lyu, J., Wang, S., Balius, T. E., Singh, I., Levit, A., Moroz, Y. S., ...
 Irwin, J. J. (2019). Ultra-large library docking for discovering new
 chemotypes. Nature. https://doi.org/10.1038/s41586-019-0917-9
 
-## Conformações bioativas.
+#### Conformações bioativas.
 Gürsoy, O., & Smieško, M. (2017). Searching for bioactive conformations
 of drug-like ligands with current force fields: how good are we? Journal
 of Cheminformatics, 9(1), 29. https://doi.org/10.1186/s13321-017-0216-0
 
-## OpenMM
-http://openmm.org/
+#### Softwares de Modelagem Molecular de codigo fonte aberto
+
+http://openbabel.org/wiki/Main_Page
+
+##### Especializados em Dinamica molecular.
+|Nome|Coding|Link|
+|---|---|---|
+|OpenMM | Python, C++, Cuda, OpenCl | http://openmm.org/ 
+|Amber|Fortran,C,Python|http://ambermd.org/|
+|GROMACS | C++ | http://www.gromacs.org/ |
+
