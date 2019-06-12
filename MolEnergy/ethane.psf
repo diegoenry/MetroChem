@@ -1,0 +1,42 @@
+PSF CHEQ EXT XPLOR
+
+         1 !NTITLE
+
+
+         6 !NATOM
+         1 SYS      1        UNL      C        c2      -0.105800       12.0100           
+         2 SYS      1        UNL      C1       c2      -0.105800       12.0100           
+         3 SYS      1        UNL      H        ha       0.052900        1.0080           
+         4 SYS      1        UNL      H1       ha       0.052900        1.0080           
+         5 SYS      1        UNL      H2       ha       0.052900        1.0080           
+         6 SYS      1        UNL      H3       ha       0.052900        1.0080           
+
+         5 !NBOND: bonds
+         1         2         1         3         1         4         2         5
+         2         6
+
+         1 !NTHETA: angles
+         2         1         3         
+
+         4 !NPHI: dihedrals
+         3         1         2         5         3         1         2         6
+         4         1         2         5         4         1         2         6
+
+         0 !NIMPHI: impropers
+
+
+         0 !NDON: donors
+
+
+         0 !NACC: acceptors
+
+
+         0 !NNB
+
+         0         0         0         0         0         0
+
+         1         0 !NGRP NST2
+         0         1         0
+
+         0 !NCRTERM: cross-terms
+

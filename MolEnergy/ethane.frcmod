@@ -1,0 +1,25 @@
+Remark line goes here
+MASS
+c2 12.010        0.360
+ha 1.008         0.135
+
+BOND
+c2-c2  569.40   1.334
+c2-ha  343.10   1.088
+
+ANGLE
+c2-c2-ha   49.900     120.430
+ha-c2-ha   38.100     116.900
+
+DIHE
+ha-c2-c2-ha   4   26.600       180.000           2.000
+
+IMPROPER
+c2-ha-c2-ha         1.1          180.0         2.0          Using the default value
+
+NONBON
+  c2          1.9080  0.0860
+  ha          1.4590  0.0150
+
+
+
