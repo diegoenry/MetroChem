@@ -56,7 +56,7 @@ serviço. Se formos realmente bons, podemos gerar receita para o
 departamento.
 
 
-# Seguem as recomendações de artigo para o MetroConf.
+# Recomendações de artigo para o MetroConf.
 
 ## Estado da Arte.
 Hawkins, P. C. D. (2017). Conformation Generation: The State of the Art.
