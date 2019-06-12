@@ -14,8 +14,8 @@ type topology
     integer	                     :: num_dihedrals
 
     integer,allocatable          :: bonds(:)
-    real*8,allocatable             :: bond_k(:)
-    real*8,allocatable             :: bond_0(:)
+    real*8,allocatable           :: bond_k(:)
+    real*8,allocatable           :: bond_0(:)
     
     
     integer,allocatable          :: angles(:)
@@ -24,17 +24,17 @@ type topology
     integer,allocatable          :: id(:)
     character(len=4),allocatable :: name(:)
     character(len=6),allocatable :: type(:)
-    real*8,allocatable             :: mass(:)
-    real*8,allocatable             :: charge(:)    
+    real*8,allocatable           :: mass(:)
+    real*8,allocatable           :: charge(:)    
     character(len=6),allocatable :: segid(:)
     integer,allocatable          :: resid(:)
     character(len=6),allocatable :: resname(:)
     
     ! Read from PDB file
     character(len=30),allocatable:: pdb(:)
-    real*8,allocatable             :: x(:)
-    real*8,allocatable             :: y(:)
-    real*8,allocatable             :: z(:)
+    real*8,allocatable           :: x(:)
+    real*8,allocatable           :: y(:)
+    real*8,allocatable           :: z(:)
 
 end type topology
 
@@ -87,10 +87,23 @@ type angles
     integer,allocatable 			:: angle_2(:)
     integer,allocatable 			:: angle_3(:)
     real*8,allocatable    			:: angle_k(:)
-    real*8,allocatable   				:: angle_0(:)
+    real*8,allocatable   			:: angle_0(:)
 end type angles
 
 type(angles) :: angle_list
+
+
+type dihedrals
+    character(len=5),allocatable 	:: dihedral_types(:)
+    integer,allocatable 			:: dihedral_1(:)
+    integer,allocatable 			:: dihedral_2(:)
+    integer,allocatable 			:: dihedral_3(:)
+    integer,allocatable 			:: dihedral_4(:)
+    real*8,allocatable    			:: dihedral_k(:)
+    real*8,allocatable   			:: dihedral_0(:)
+end type dihedrals
+
+type(dihedrals) :: dihedral_list
 
 
 ! FORCE
@@ -101,6 +114,6 @@ real*8, allocatable :: fz(:)
 ! Potential
 real*8 :: EBOND
 real*8 :: EANGLE
-
+real*8 :: EDIHEDRAL
 
 end module mol

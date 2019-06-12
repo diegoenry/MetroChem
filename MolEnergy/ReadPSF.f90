@@ -2,7 +2,7 @@ subroutine ReadPSF
 use mol
 
 character(len=32) :: line
-open(1,file="ethane.psf")
+open(1,file="butane.psf")
 
 ! Read Atoms -----------------------------------------------
 do while (index(line,'NATOM')==0)

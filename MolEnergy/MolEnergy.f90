@@ -13,7 +13,7 @@ call GenAngleList
 open(2,file='out.pdb')
 call WritePDB
 
-do step=1,10
+do step=1,200
 
 ! Zera as forcas 
 fx = 0.0 ! Global, mover para fora dessa funcao
@@ -31,7 +31,7 @@ call ForceAngles
 
 call Minimize
 
-call WriteEnergy
+!call WriteEnergy
 
 call WritePDB
 enddo

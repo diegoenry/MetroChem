@@ -4,7 +4,7 @@ character(len=32) :: line
 
 
 !open(1,file='test.pdb')
-open(1,file='ethane.pdb')
+open(1,file='butane.pdb')
 
 ! Go to ATOM record
 do while (index(line,'ATOM')==0)

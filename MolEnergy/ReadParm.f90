@@ -1,6 +1,7 @@
 subroutine ReadParm
 use mol
 character(len=32) :: line
+open(1,file='butane.frcmod')
 
 
 ! Based on ReadPSF we need a routine to set:
@@ -11,11 +12,10 @@ character(len=32) :: line
 
 forcefield%num_atom_types=2
 forcefield%num_bond_types=2
-forcefield%num_angle_types=2
-forcefield%num_dihedral_types=1
+forcefield%num_angle_types=3
+forcefield%num_dihedral_types=
 
 
-open(1,file='ethane.frcmod')
 
 allocate(forcefield%atom_types    (forcefield%num_atom_types))
 allocate(forcefield%atom_epsilon  (forcefield%num_atom_types))

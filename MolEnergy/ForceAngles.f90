@@ -79,10 +79,10 @@ do i=1,molecule%num_angles
     x3(3) = molecule%z(a3)
 
 ! [ Passo 2 ] Cria os vetores de distancia AB, BC
-    ab = x1-x2
-    ba = x2-x1
-    bc = x2-x3
-    cb = x3-x2
+    ab = x2-x1
+    ba = x1-x2
+    bc = x3-x2
+    cb = x2-x3
 
 ! [ Passo 3 ] normaliza o vetor ba, e o vetor cb
 ! da no mesmo fazer o ba e bc.
@@ -94,7 +94,8 @@ do i=1,molecule%num_angles
     
     v1_norm = sqrt ( dot_product ( ab, ab ) )
     
-    v2_norm = sqrt ( dot_product ( cb, cb ) )
+!    v2_norm = sqrt ( dot_product ( cb, cb ) )
+    v2_norm = sqrt ( dot_product ( bc, bc ) )
 
     angle_rad = acos ( dot / ( v1_norm * v2_norm ) )
     
@@ -108,10 +109,11 @@ do i=1,molecule%num_angles
     
     EANGLE = EANGLE + angle_energy
     
-    ! Computa a forca -2k(theta-theta_0) 
-    angle_force = 2 * ak * (angle_deg - a0) 
+    ! Computa a forca 2k(theta-theta_0) 
+    angle_force =  2 * ak * (angle_deg - a0) 
 
-!   write(*,*) a1,a2,a3,angle_deg,(angle_deg - a0), a0,ak,angle_force
+!   write(*,*) a1,a2,a3,angle_deg,(angle_deg - a0), a0,ak,angle_force,v1_norm,v2_norm
+    write(*,'(5f12.3)') angle_deg,angle_force,v1_norm,v2_norm
     
 ! ------------------------------------------------------------------
 ! Redistribute forces to each atom
@@ -150,7 +152,7 @@ do i=1,molecule%num_angles
     fy(a2) = - fy(a1) - fy(a3) + fy(a2)
     fz(a2) = - fz(a1) - fz(a3) + fz(a2)
 
-    write(*,*)  a1,a2,a3,a0,angle_deg
+   ! write(*,*)  a1,a2,a3,a0,angle_deg
 enddo
 
 
