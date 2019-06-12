@@ -3,10 +3,10 @@ Reference code for MetroChem
 
 O Produto mínimo viável do MetroChem será desenvolvido em 4 etapas principais ao longo de 2019->2020.
 
-1 - MetroConf - Análise conformacional.
-2 - MetroDock - Docking Molecular.
-3 - MetroMD - Dinâmica Molecular.
-4 - MetroMC - Monte Carlo.
+1 - MetroConf - Análise conformacional.  
+2 - MetroDock - Docking Molecular.  
+3 - MetroMD - Dinâmica Molecular.  
+4 - MetroMC - Monte Carlo.  
 
 ## MetroConf 
 
