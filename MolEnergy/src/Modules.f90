@@ -94,7 +94,7 @@ type(angles) :: angle_list
 
 
 type dihedrals
-    character(len=5),allocatable 	:: dihedral_types(:)
+    character(len=11),allocatable 	:: dihedral_types(:)
     integer,allocatable 			:: dihedral_1(:)
     integer,allocatable 			:: dihedral_2(:)
     integer,allocatable 			:: dihedral_3(:)

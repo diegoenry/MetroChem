@@ -1,6 +1,9 @@
 subroutine ReadParm
 use mol
+
 character(len=32) :: line
+integer	:: trash
+
 open(1,file='butane.frcmod')
 
 
@@ -13,8 +16,7 @@ open(1,file='butane.frcmod')
 forcefield%num_atom_types=2
 forcefield%num_bond_types=2
 forcefield%num_angle_types=3
-forcefield%num_dihedral_types=1
-
+forcefield%num_dihedral_types=5
 
 
 allocate(forcefield%atom_types    (forcefield%num_atom_types))
@@ -24,7 +26,6 @@ allocate(forcefield%atom_sigma    (forcefield%num_atom_types))
 allocate(forcefield%bond_types    (forcefield%num_bond_types))
 allocate(forcefield%bond_k        (forcefield%num_bond_types))
 allocate(forcefield%bond_0        (forcefield%num_bond_types))
-
 
 allocate(forcefield%angle_types   (forcefield%num_angle_types))
 allocate(forcefield%angle_k       (forcefield%num_angle_types))
@@ -68,7 +69,7 @@ do while (index(line,'DIHE')==0)
 end do
 
 do i=1,forcefield%num_dihedral_types
-read(1,*)   forcefield%dihedral_types(i), &
+read(1,*)  forcefield%dihedral_types(i), &
             forcefield%dihedral_k(i),     &
             forcefield%dihedral_0(i),     &
             forcefield%dihedral_y(i)

@@ -1,5 +1,6 @@
 subroutine GenDihedralList
 use mol
+integer	:: trash
 
 !
 !V(dihedral) = Kchi(1 + cos(n(chi) - delta))
