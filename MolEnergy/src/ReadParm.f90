@@ -13,7 +13,7 @@ open(1,file='butane.frcmod')
 forcefield%num_atom_types=2
 forcefield%num_bond_types=2
 forcefield%num_angle_types=3
-forcefield%num_dihedral_types=
+forcefield%num_dihedral_types=1
 
 
 
