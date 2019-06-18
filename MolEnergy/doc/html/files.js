@@ -7,6 +7,8 @@ var files =
     [ "ForceBonds.f90", "_force_bonds_8f90.html", "_force_bonds_8f90" ],
     [ "GenAngleList.f90", "_gen_angle_list_8f90.html", "_gen_angle_list_8f90" ],
     [ "GenBondList.f90", "_gen_bond_list_8f90.html", "_gen_bond_list_8f90" ],
+    [ "GengDihedralList.f90", "_geng_dihedral_list_8f90.html", "_geng_dihedral_list_8f90" ],
+    [ "Minimize.f90", "_minimize_8f90.html", "_minimize_8f90" ],
     [ "Modules.f90", "_modules_8f90.html", "_modules_8f90" ],
     [ "MolEnergy.f90", "_mol_energy_8f90.html", "_mol_energy_8f90" ],
     [ "ReadParm.f90", "_read_parm_8f90.html", "_read_parm_8f90" ],
